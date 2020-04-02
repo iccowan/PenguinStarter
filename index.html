@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Penguin Sort</title>
+        
+        <link href="css.css" rel="stylesheet" type="text/css" />
+        <script src="https://d3js.org/d3.v5.min.js"></script>
+    </head>
+    
+    <body>
+        <div class="main">
+            <table id="penguinTable">
+                <thead>
+                    <tr>
+                        <th id="image">Image</th>
+                        <th id="quiz">Quiz Average</th>
+                        <th id="hw">Homework Average</th>
+                        <th id="test">Test Average</th>
+                        <th id="finalExam">Final Exam</th>
+                        <th id="finalGrade">Final Grade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="modal hidden">
+            <div class="modal-header">
+                <img id="pengImg" />
+                <h2>Penguin Information</h2>
+            </div>
+            <br />
+            <hr />
+            <div class="modal-body">
+                <table class="onePengTable" id="quizzes">
+                    <thead>
+                        <tr>
+                            <th>Quizzes</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                <table class="onePengTable" id="homework">
+                    <thead>
+                        <th>Homework</th>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                <table class="onePengTable" id="tests">
+                    <thead>
+                        <th>Tests</th>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                <table class="onePengTable" id="finalE">
+                    <thead>
+                        <th>Final Exam</th>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+                <table class="onePengTable" id="finalG">
+                    <thead>
+                        <th>Final Grade</th>
+                    </thead>
+                    <tbody>
+                        <tr></tr>
+                    </tbody>
+                </table>
+            </div>
+            <btn id="closeModal">Close</btn>
+        </div>
+    </body>
+    
+    <script src="js.js"></script>
+</html>

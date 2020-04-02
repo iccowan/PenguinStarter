@@ -1,0 +1,50 @@
+div.modal {
+    display: auto;
+    position: fixed;
+    opacity: 100%;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: lightgrey;
+    padding: 20px;
+    border-color: black;
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    box-shadow: 20px 20px 30px;
+}
+
+div.trans-in {
+    opacity: 0;
+    top: -100px;
+}
+
+div.modal #pengImg {
+    width: 50px;
+    float: right;
+}
+
+div.hidden {
+    display: none;
+}
+
+#closeModal {
+    float: right;
+    background-color: red;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    box-shadow: 5px 5px 10px black;
+}
+
+#closeModal:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 5px black;
+}
+
+#penguinTable tr:hover {
+    cursor: pointer;
+}
