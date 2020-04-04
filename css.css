@@ -5,7 +5,7 @@ div.modal {
     top: 10px;
     left: 50%;
     transform: translate(-50%, 0);
-    background: lightgrey;
+    background: lightgray;
     padding: 20px;
     border-color: black;
     border-radius: 5px;
@@ -47,4 +47,25 @@ div.hidden {
 
 #penguinTable tr:hover {
     cursor: pointer;
+}
+
+#penguinTable th{
+    border-style:groove
+
+}
+
+#penguinTable td{
+    background-color:#DCDCDC;
+    width:16%;
+    text-align:center;
+}
+
+#penguinTable tr.fail td{
+    border-color:red; 
+    background-color:indianred;
+}
+
+
+#penguinTable img {
+    height:100px
 }
