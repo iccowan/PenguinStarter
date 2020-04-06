@@ -12,6 +12,8 @@ div.modal {
     border-width: 1px;
     border-style: solid;
     box-shadow: 20px 20px 30px;
+    max-width: 80%;
+    overflow-x: auto;
 }
 
 div.trans-in {
@@ -26,6 +28,20 @@ div.modal #pengImg {
 
 div.hidden {
     display: none;
+}
+
+table.onePengTable {
+    border-style: solid;
+    border-color: darkgray;
+    margin: 10px;
+    width: 100%;
+    overflow: visible;
+}
+
+table.onePengTable td.inner-td {
+    border-width: 3px;
+    border-style: groove;
+    padding: 3px;
 }
 
 #closeModal {

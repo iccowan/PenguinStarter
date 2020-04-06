@@ -4,39 +4,39 @@ var createModal = function(student) {
     d3.select("#pengImg")
       .attr("src", "imgs/" + student.picture);
     
-    d3.select("#quizzes tbody tr")
+    d3.select("#quizzes tbody tr").append("td")
       .selectAll("td")
         .data(student.quizes)
         .enter()
-      .append("td")
+      .append("td").classed("inner-td", true)
         .text(function(quiz) { return quiz.grade; });
     
-    d3.select("#homework tbody tr")
+    d3.select("#homework tbody tr").append("td")
       .selectAll("td")
         .data(student.homework)
         .enter()
-      .append("td")
+      .append("td").classed("inner-td", true)
         .text(function(hw) { return hw.grade; });
     
-    d3.select("#tests tbody tr")
+    d3.select("#tests tbody tr").append("td")
       .selectAll("td")
         .data(student.test)
         .enter()
-      .append("td")
+      .append("td").classed("inner-td", true)
         .text(function(tet) { return tet.grade; });
     
-    d3.select("#finalE tbody tr")
+    d3.select("#finalE tbody tr").append("td")
       .selectAll("td")
         .data(student.final)
         .enter()
-      .append("td")
+      .append("td").classed("inner-td", true)
         .text(function(f) { return f.grade; });
     
-    d3.select("#finalG tbody tr")
+    d3.select("#finalG tbody tr").append("td")
       .selectAll("td")
         .data([finalGrade(student)])
         .enter()
-      .append("td")
+      .append("td").classed("inner-td", true)
         .text(function(finalG) { return finalG; });
 
     d3.select("div.modal").classed("trans-in", true).classed("hidden", false);
